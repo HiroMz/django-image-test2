@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Input page</title>
+        </head>
+        <body>
+            <form action = "{% url 'mysite:result' %}" method = "get">
+                {% csrf_token %}
+                <label>Input</label>
+                <input type="text" name="input" value="">
+                <br>
+                <input type="submit" value="送信">
+            </form>
+        </body>
+    </html>

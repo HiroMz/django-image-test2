@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Your request image</title>
+    </head>
+    <body>
+        {{ input }}
+        <img src="{% static "images/neko.jpg" %}" width="100%" height="100%" border="0" />
+    </body>
+</html>
